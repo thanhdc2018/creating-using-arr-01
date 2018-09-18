@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>creating-using-arr</title>
+</head>
+<body>
+<button type ="button" onclick="click1()">Bài 1: alertMessage(Hello)</button>
+<button type ="button" onclick="addmorepoint(parseInt(prompt('Hãy nhập 1 số:')))">Bài 2: Tăng số</button>
+<button type ="button" onclick="comparenums(parseInt(prompt('Hãy nhập số thứ 1:')),parseInt(prompt('Hãy nhập số thứ 2:')))">Bài 3: So sánh số nhập vào</button>
+<button type ="button" onclick="addalert()">Bài 4: Thêm các hàm alert() vào những vị trí thích hợp</button>
+<script>
+function click1(){
+    alert("Hello!!!");
+}
+function addmorepoint(x){
+    x++;
+    document.write((x));
+
+}
+
+function comparenums(a,b){
+    // let x =0;
+    if(a > b){
+        document.write("Số "+ a + " lớn hơn số " + b);
+    }
+    else{
+        let x = a + b;
+        document.write(x)
+    }
+    // document.write(x);
+ }
+
+function addalert(){
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        let result = firstNum + secondNum;
+        return result;
+    }
+    let result = 0;
+    alert(result);
+    result = addNumbers();
+    alert(result);
+}
+
+
+
+</script>
+</body>
+</html>
